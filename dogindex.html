@@ -3,18 +3,15 @@
 	<head>
 		<link rel= "stylesheet" type="text/css" href="dogstyle.css">
 		<meta charset="UTF-8">
-		
+
 		<title>Sadness be gone!</title>
 	</head>
 
 	<body>
-		<script>
-			//alert("DOGS ABOUND!"); 
-		</script>
 
 		<div id="headers">
 			<h1> Having a bad day?</h1>
-			<h1> Not anymore! </h1> 
+			<h1> Not anymore! </h1>
 		</div>
 
 		<h3 id="subheader">Happiness and fluffyness is just a click away</h3>
@@ -23,19 +20,7 @@
 
 		<button id="randomDog" class="button">Click away!</button>
 
-		<script type="text/javascript">
-
-			document.getElementById("randomDog").onclick = function () {
-				var dogs = new Array() 
-
-				dogs[0] = "Dogg/1BJ9F4Y.jpg" 
-				dogs[1] = "Dogg/dKN9W2d.jpg"
-				dogs[2] = "Dogg/tumblr_o5ylo4Co0J1uae2w5o1_1280.jpg"
-
-				var dog=Math.floor(Math.random()*dogs.length);
-				document.getElementById('imageContainer').innerHTML = '<img src="'+dogs[dog]+'" border=0>';
-			};
-		</script> 
+		<script src="js/dogjs.js"></script>
 
 	</body>
 </html>
