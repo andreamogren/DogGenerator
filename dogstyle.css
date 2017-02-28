@@ -1,0 +1,54 @@
+body {
+	font-family: Georgia, serif;
+	text-align: center;
+}
+
+h1 {
+	font-size: 42;
+}
+
+#headers {
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
+	margin-top: 100px;
+	background: #85e085;
+	width: 400px;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+#subheader {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background: #80bfff; 
+	padding: 10px;
+	width: 400px;
+	border-radius: 10px;
+}
+
+#randomDog {
+	background-color: #d24dff;
+	color: white;
+	font-size: 20px;
+	border: none;
+	padding: 20px; 
+	border-radius: 10px;
+	margin: left;
+	margin-bottom: 10px; 
+}
+
+#anotherDog {
+	background-color: #ffa64d;
+	color: white;
+	font-size: 20px;
+	border: none;
+	padding: 20px; 
+	border-radius: 10px;s
+	margin: right;
+}
+
+#column-1 {
+	width: 50%;
+}
