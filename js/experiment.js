@@ -1,11 +1,11 @@
-$.ajax({
+/* $.ajax({
 
   // The 'type' property sets the HTTP method.
   // A value of 'PUT' or 'DELETE' will trigger a preflight request.
   type: 'GET',
 
   // The URL to make the request to.
-  url: 'http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=dog',
+  url: 'http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=cute+dog',
 
   // The 'contentType' property sets the 'Content-Type' header.
   // The JQuery default for this property is
@@ -41,8 +41,7 @@ $.ajax({
     // information about the error.
   }
 });
-
-
+*/
 
 /*function otherName()
 {
@@ -65,7 +64,7 @@ function setInputText (){
 */
 
 
-$(document).ready(function(){
+/*$(document).ready(function(){
     getData();
 
 });
@@ -89,4 +88,11 @@ function getData() {
 
   })
 	});
-});
+});*/
+
+var xhr = $.get("http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=cute+dog");
+xhr.done(function(data) { console.log("success got data", data); });
+
+var postGIF = xhr.data.image_url
+
+document.getElementById('imageContainer').innerHTML = '<img src="'+postGIF+'" border=0>';
