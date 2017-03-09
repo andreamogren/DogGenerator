@@ -13,3 +13,10 @@ document.getElementById("randomDog").onclick = function () {
   var generateDog = Math.floor(Math.random()*dogData.length);
   document.getElementById('imageContainer').innerHTML = '<img src="'+dogData[generateDog]+'" border=0>';
 };
+
+/*var xhr = $.get("http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=cute+dog");
+xhr.done(function(data) { console.log("success got data", data); });
+
+var postGIF = xhr.data.image_url;
+
+document.getElementById('imageContainer').innerHTML = '<img src="'+postGIF+'" border=0>';*/
